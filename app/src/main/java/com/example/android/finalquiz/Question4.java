@@ -11,7 +11,7 @@ public class Question4 extends AppCompatActivity {
 
     Button questionFourSubmitButton;
     int runningScore;
-    String dave;
+    String darryl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +24,9 @@ public class Question4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                EditText et = (EditText) findViewById(R.id.dave);
-                dave = et.getText().toString().toUpperCase();
-                if (dave .equals("DAVE")){
+                EditText et = (EditText) findViewById(R.id.darryl);
+                darryl = et.getText().toString().toUpperCase();
+                if (darryl .equals("DARRYL")){
                     runningScore = runningScore + 1;
                 }
 

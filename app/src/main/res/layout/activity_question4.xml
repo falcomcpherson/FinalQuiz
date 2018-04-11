@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:hint="I could have sworn it was a D name..."
             android:layout_marginTop="20dp"
-            android:id="@+id/dave"/>
+            android:id="@+id/darryl"/>
 
     <Button
         android:id="@+id/questionFourSubmitButton"
