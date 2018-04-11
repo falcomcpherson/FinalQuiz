@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.finalquiz.Question10">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="In Thor Ragnarok, Thor returns home to Asgard to find his Father, King Odin, relaxing and taking in a wonderful rendition of the sad moment that Loki sacrificed himself to save them. As we close in on the thespian portraying Loki, you might recognize him as one of our own from here in Midgard! Who might this actor be?" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hint: He was stuck on Mars.. Forgot his name once... More recently decided living smaller is better."
+            android:layout_marginTop="20sp"
+            android:id="@+id/mattDamon"/>
+
+        <Button
+            android:id="@+id/questionTenSubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="SUBMIT"/>
+    </LinearLayout>
+</ScrollView>
