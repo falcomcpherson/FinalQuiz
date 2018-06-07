@@ -1,6 +1,7 @@
 package com.example.android.finalquiz;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Point;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,8 +18,8 @@ public class FinalScore extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_score);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         displayScore(finalScoreMessage);
-
 
         tryAgainButton = findViewById(R.id.tryAgainButton);
         tryAgainButton.setOnClickListener(new View.OnClickListener() {
@@ -29,8 +30,6 @@ public class FinalScore extends AppCompatActivity {
             }
 
     });}
-
-
 
     public void displayScore(String finalScoreMessage) {
         Intent intentQuestion10Point = getIntent();
@@ -46,6 +45,10 @@ public class FinalScore extends AppCompatActivity {
         }
         TextView finalScoreTextView = findViewById(R.id.finalScore);
         finalScoreTextView.setText (finalScoreMessage);
+    }
+    public void onBackPressed() {
+        Intent intentReturnHome = new Intent(FinalScore.this, MainActivity.class);
+        startActivity(intentReturnHome);
     }
 
 

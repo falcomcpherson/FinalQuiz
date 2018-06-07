@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#000000"
-            android:text="Which Infinity Stone has yet to be revealed in the MCU?"/>
+            android:text="Which Infinity Stone was the last to be revealed in the MCU?"/>
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -55,10 +55,5 @@
             android:layout_gravity="center"
             android:text="SUBMIT"/>
     </LinearLayout>
-
-
-
-
-
 
 </ScrollView>
